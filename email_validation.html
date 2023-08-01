@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<body>
+<center>
+<form>
+<label for "email" > Enter Your E-mail id </label>
+<input type="text" name="eml" id="eml" size="30">
+<br>
+<input type="button" value="check" onClick="vald()">
+</form>
+<script>
+function vald( )
+{
+e=document.getElementById("eml").value;
+atf=e.indexOf("@gmail.com");
+if (atf==-1)
+	{
+		alert("invalid email id");
+	}
+	else
+	{
+		alert("valid email id");
+	}
+}
+</body>
+</head>
+</script>
+</center>
+</html>

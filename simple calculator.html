@@ -1,0 +1,59 @@
+<html>
+<center><h1>SIMPLE CALCULATOR</h1>
+<form name= "f" >
+Enter the value of a:
+<input type= "text" name= "n" > <br>
+Enter the value of b:
+<input type= "text" name= "m" > <br> <br>
+RESULT
+<input type= "text" name= "r" > <br> <br>
+	<input type= "button"  value = "+" onClick= "cod(value)" >
+	<input type= "button"  value = "-" onClick= "cod(value)" >
+	<input type= "button"  value = "*" onClick= "cod(value)" >
+	<input type= "button"  value = "/" onClick= "cod(value)" >
+	<input type= "button"  value = "%" onClick= "cod(value)" >
+<script>
+var a,b,c
+function cod(value)
+{
+	a=parseInt(f.n.value);
+	b=parseInt(f.m.value);
+	if(value=="+")
+	c=a+b;
+	if(value=="-")
+	c=a-b;
+ 	if(value=="*")
+	c=a*b;
+	if(value=="/")
+	c=a/b;
+	if(value=="%")
+	c=a%b;
+		f.r.value=c
+}
+</script>
+</center>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

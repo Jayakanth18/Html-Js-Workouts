@@ -1,0 +1,56 @@
+<html>
+<center> <h1> Sorting of Number and String </h1>
+<form name="sorting">
+<input type="button" value="Number Sorting" onClick="nsort( );">
+<input type="button" value="String Sorting" onClick="ssort( );">
+</form>
+<script>
+var n,t;
+var a=new Array( );
+//String Sorting
+function ssort( )
+{
+n=parseInt(prompt("Enter the Number of String:"));
+for(i=1;i<=n;i++)
+a[i]=prompt("Enter the String:");
+document.write("<br><br>Before Sorting");
+for(i=1;i<=n;i++)
+document.write("<br>" + a[i]);
+//Sorting
+for(i=1;i<=n-1;i++)
+for(j=1;j<=n;j++)
+if(a[j]>a[j+1])
+{
+t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+document.write("<br><br>After Sorting");
+for(i=1;i<=n;i++)
+document.write("<br>" + a[i]);
+}
+//Number Sorting
+function nsort( )
+{
+n=parseInt(prompt("Enter the Number of String:"));
+for(i=1;i<=n;i++)
+a[i]=prompt("Enter the String:");
+document.write("<br><br>Before Sorting");
+for(i=1;i<=n;i++)
+document.write("<br>" + a[i]);
+//Sorting
+for(i=1;i<=n-1;i++)
+for(j=1;j<=n-i;j++)
+if(a[j]>a[j+1])
+{
+t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+document.write("<br><br>After Sorting");
+for(i=1;i<=n;i++)
+document.write("<br>" + a[i]);
+}
+</script>
+</center>
+</html>

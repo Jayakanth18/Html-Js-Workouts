@@ -1,0 +1,36 @@
+<html>
+<body onLoad=" digital()" >
+<center><h1>DIGITAL CLOCK </h1></center>
+<form name ="f">
+<center>	                                                      
+Date: <br> <input type ="text" name ="t1">  <br> 
+Time: <br> <input type ="text" name="t2">         
+</form>
+<script>
+function digital()
+{
+var  d=new Date();
+var session="AM"
+f.t1.value =d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+h=d.getHours();
+m=d.getMinutes();
+s=d.getSeconds();
+var a="PM"
+if(h>=12)
+session="AM"
+if(h==0)
+h=12;
+if(h>=13)
+h=h-12;
+if(h<10)
+h="0"+h;
+if(m<10)
+m="0"+m;
+if(s<10)
+s="0"+s;
+f.t2.value=h+":"+m+":"+s+" "+a;
+setTimeout("digital()",1000);
+}
+</script>
+</body>
+</html>

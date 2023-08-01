@@ -1,0 +1,72 @@
+<html>
+<h1> <center> STRING MANIPULATION </center> </h1> <br>
+<style>
+form{
+font-size: 20px;
+color: black;
+}
+input[type=button]{
+font-size: 20px;
+}
+input[type=text]{
+font-size: 20px;
+box-sizing: border-box;
+width: 30%;
+}
+</style>
+<form>
+<center>
+<h3>ENTER THE STRING: </h3>
+<input type="text" name="t1"> <br> <br>
+<input type="button" name="b1" value="UPPER CASE"  onClick="st(form,name);"> 
+<input type="button" name="b2" value="LOWER CASE"  onClick="st(form,name);"> 
+<input type="button" name="b3" value="SUB STRING -1"  onClick="st(form,name);"> 
+<input type="button" name="b4" value="SUB STRING -2"  onClick="st(form,name);"> 
+<input type="button" name="b5"  value="INDEX"  onClick="st(form,name);">
+<input type="button" name="b6" value="LENGTH"  onClick="st(form,name);"> <br>  <br>
+<input type="text" name="t">
+ <input type="button" name="b7" value="CONCAT"  onClick="st(form,name);"> 
+<br>
+<h3>RESULT: </h3>
+<input type="text" name="t2">
+</center>
+</form>
+<script>
+function st(form,name)
+{
+a=form.t1.value;
+	switch(name)
+	{
+	case "b1":
+	form.t2.value=a.toUpperCase();
+	break;
+	case "b2":
+	form.t2.value=a.toLowerCase();
+	break;
+	case "b3":
+	form.t2.value=a.substring(1);
+	break;
+	case "b4":
+	form.t2.value=a.substring(0,2);
+	break;
+	case "b5":
+	form.t2.value=a.indexOf("a")+1;
+	break;
+	case "b6":
+	form.t2.value=a.length;
+	break;
+	case "b7":
+	form.t2.value=a+"	"+form.t.value;
+	break;
+	}
+}
+</script>
+</html>
+
+
+
+
+
+
+
+

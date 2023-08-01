@@ -1,0 +1,25 @@
+<html>
+<center>
+<h1>array elements are:</h1>
+<form name="f">
+ENTER THE N ELEMENTS:
+<input type = "text" name = "t1" ><br>
+<input type = "button" value = "input" onClick = "input();">
+<input type = "button" value = "output" onClick = "output();">
+</form>
+<script>
+var a = new Array();
+function input()
+{
+n = parseInt(f.t1.value);
+for(i=1;i<=n;i++)
+a[i] = prompt("enter the elements:");
+}
+function output()
+{
+n = parseInt(f.t1.value);
+for(i=1;i<=n;i++)
+document.write(a[i]+"<br>");
+}
+</script>
+</html>

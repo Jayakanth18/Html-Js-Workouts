@@ -1,0 +1,14 @@
+<html>
+<script>
+var s="welcome";
+var a = 0;
+function sb()
+{
+window.status=s.substring(a);
+a++;
+if(a>s.length)a=0;
+window.setTimeout("sb();",1000);
+}
+sb();
+</script>
+</html>

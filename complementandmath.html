@@ -1,0 +1,26 @@
+<html>
+<h1> <center>  COMPLEMENT  </h1>
+<script>
+var i;
+document.write("<pre>")
+document.write("N	10s COMPLEMENT	9s COMPLEMENT	CUBES	SQUARE	SQUARE ROOT	<br>")
+
+for(i=1; i<=100; i++)
+{
+var d=Math.sqrt(i);
+c=10-i;
+N=9-i;
+if(i>9)
+{
+N=99-i;
+c=100-i;
+}
+if(i>99)
+{
+c=1000-i;
+N=999-i;
+}
+document.write(i+"	"+c+"		"+N+" 	"+"	"+(i*i*i)+"	"+(i*i)+"	"+d+"	"+"<br>");
+}	
+</script>
+</html>

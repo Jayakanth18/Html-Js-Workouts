@@ -1,0 +1,17 @@
+<html>
+<head>
+<center> <h1> DATE AND TIME </h1> <hr>
+<form name="f">
+<input type="text" name="s" size="50">
+<input type="button" name="button1" value="Click to show Time&Date" onClick="dis( )">
+</head>
+</form>
+<script>
+var d = new Date( )
+function dis( )
+{
+f.s.value=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"        "+	
+	d.getDate()+"/"+(d.getMonth()+1)+"/"+(d.getYear()+1900);
+}
+</script>
+</html>
