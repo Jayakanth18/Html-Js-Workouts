@@ -1,0 +1,21 @@
+<html>
+<body onLoad="banner()"onmousedown="pop(event)">
+<script>
+function banner()
+{
+var myWindow=window.open("ad.html","myWindow","resizable=0,scrollbar=0,toolbar=0,height=300,width=300");
+}
+function pop(event)
+{
+if(event.button==2)
+{
+var p=window.createPopup();
+var pbody=p.document.body;
+pbody.style.backgroundColor="grey";
+pbody.innerHTML="cut<hr>copy<hr>paste";
+p.show(event.x,event.y,300,100,document.body);
+}
+}
+</script>
+</body>
+</html>
